@@ -1,9 +1,11 @@
 import random
 
 def main():
-    number = random.randint(1, 100)
+    start = 1
+    finish = 100
+    number = random.randint(start, finish)
     attempts = 7
-    print(f"Вітаю! Я загадав число від 1 до 100. Спробуй вгадати його за {attempts} спроб.")
+    print(f"Вітаю! Я загадав число від {start} до {finish}. Спробуй вгадати його за {attempts} спроб.")
     
     for _ in range(attempts):
         guess = input("Введи своє припущення: ")
